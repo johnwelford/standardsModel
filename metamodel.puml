@@ -1,4 +1,5 @@
 @startuml
+!pragma revision 89 ' force update of cached image?
 'title Standard modelling metamodel
 'scale 1000 width
 'skinparam packageStyle frame
