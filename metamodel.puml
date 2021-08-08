@@ -1,17 +1,28 @@
 @startuml
-title Standard modelling metamodel
+'title Standard modelling metamodel
 'scale 1000 width
 'skinparam packageStyle frame
 'skinparam linetype polyline
 'top to bottom direction
-hide members
+hide empty members
 'hide circle
 'hide stereotype 
 
-class term as "Term"
-class concept as "Concept"
-class reference as "Reference"
-class deliverable as "Deliverable"
+class term as "Term" << (T,#FF7700) >> {
+{field} Definition
+}
+class concept as "Concept"<< (C,#FF7700) >> {
+{field} 
+}
+class reference as "Reference" << (R,#FF7700) >> {
+{field} 
+}
+class deliverable as "Deliverable" << (D,#FF7700) >> {
+{field} 
+}
+class activity as "Activity" << (A,#FF7700) >> {
+{field} 
+}
 
 term - concept : used in >
 @enduml
