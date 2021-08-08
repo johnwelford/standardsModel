@@ -1,17 +1,17 @@
 @startuml
-skinparam class {
-BackgroundColor PaleGreen
-ArrowColor SeaGreen
-BorderColor SpringGreen
-BackgroundColor<<Foo>> Wheat
-BorderColor<<Foo>> Tomato
-}
-skinparam stereotypeCBackgroundColor YellowGreen
-skinparam stereotypeCBackgroundColor<< Foo >> DimGray
+title Standard modelling metamodel
+'scale 1000 width
+'skinparam packageStyle frame
+'skinparam linetype polyline
+'top to bottom direction
+hide members
+'hide circle
+'hide stereotype 
 
-Class01 <<Foo>>
-Class03 <<Foo>>
-Class01 "1" *-- "many" Class02 : contains
+class term as "Term"
+class concept as "Concept"
+class reference as "Reference"
+class deliverable as "Deliverable"
 
-Class03 o-- Class04 : aggregation
+term - concept : used in >
 @enduml
