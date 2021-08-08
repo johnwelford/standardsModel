@@ -1,5 +1,4 @@
 @startuml
-!pragma revision 89 ' force update of cached image?
 'title Standard modelling metamodel
 'scale 1000 width
 'skinparam packageStyle frame
@@ -13,17 +12,26 @@ class term as "Term" << (T,#FF7700) >> {
 {field} Definition
 }
 class concept as "Concept"<< (C,#FF7700) >> {
-{field} 
+{field} Definition
 }
 class reference as "Reference" << (R,#FF7700) >> {
-{field} 
+{field} Description
 }
 class deliverable as "Deliverable" << (D,#FF7700) >> {
-{field} 
+{field} Description
 }
 class activity as "Activity" << (A,#FF7700) >> {
-{field} 
+{field} Description
+}
+class party as "Party" << (A,#FF7700) >> {
+{field} Description
 }
 
 term - concept : used in >
+activity -- activity : used in >
+
+activity -- deliverable: produces >
+party -- activity: carries out >
+activity -- reference: detailed in >
+concept -- reference: detailed in >
 @enduml
