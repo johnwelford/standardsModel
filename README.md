@@ -5,4 +5,4 @@ This is an attempt to model standards using a UML-like language - I will be star
 
 ## Metamodel
 
-![Metamodel image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/johnwelford/standardsModel/main/metamodel.puml)
+![Metamodel image](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/johnwelford/standardsModel/main/metamodel.puml)
