@@ -8,6 +8,7 @@
 hide empty members
 'hide circle
 'hide stereotype 
+class test
 !endsub
 
 ' spare colours from the palette... #FE88B1,#C9DB74,#8BE0A4,#B497E7,#D3B484,#B3B3B3
