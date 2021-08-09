@@ -1,0 +1,6 @@
+@startuml
+'title AS7473 entities definition
+!include metamodel.puml!0
+
+
+@enduml
