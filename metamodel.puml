@@ -1,5 +1,6 @@
 @startuml
 'title Standard modelling metamodel
+!startsub style
 'scale 1000 width
 'skinparam packageStyle frame
 'skinparam linetype polyline
@@ -7,6 +8,7 @@
 hide empty members
 'hide circle
 'hide stereotype 
+!endsub
 
 ' spare colours from the palette... #FE88B1,#C9DB74,#8BE0A4,#B497E7,#D3B484,#B3B3B3
 
