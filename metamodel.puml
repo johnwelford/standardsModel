@@ -4,6 +4,7 @@
 !startsub STYLE
 class test
 !endsub
+
 'scale 1000 width
 'skinparam packageStyle frame
 'skinparam linetype polyline
