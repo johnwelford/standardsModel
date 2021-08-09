@@ -1,6 +1,6 @@
 @startuml
 'title AS7473 entities definition
-!include metamodel.puml!0
+!include metamodel.puml
 
 class term as "Term" << term >>
 
