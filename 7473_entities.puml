@@ -1,7 +1,124 @@
 @startuml
 'title AS7473 entities definition
-!include metamodel.puml
+'!includesub https://github.com/johnwelford/standardsModel/raw/main/metamodel.puml!style
 
-class term as "Term" << term >>
+class 50126 as "BS EN 50126" << reference >>{
+{field} Description : The Specification and Demonstration of Reliability, Availability, Maintainability and Safety (RAMS)
+}
+class 15288 as "ISO/IEC/IEEE 15288" << reference >>{
+{field} Description : Systems and software engineering — System life cycle processes
+}
+class 31000 as "AS ISO 31000" << reference >>{
+{field} Description : Principles and Guidelines on Implementation of Risk Management
+}
+
+class acquirer as "acquirer" << term >>{
+{field} Definition: stakeholder that acquires or procures a product or service from a supplier 
+}
+
+class architecture as "architecture " << term >>{
+{field} Definition: fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution
+}
+
+class assurance as "assurance " << term >>{
+{field} Definition: confidence in achieving a goal being pursued
+NOTE: Declaration intended to give confidence. Achieved through planning a systematic set of activities that demonstrate systems engineering processes and products conform with their requirements. [BS EN 50126-1]
+}
+
+class complete as "complete and coherent" << term >>{
+{field} Definition: set that has been verified to be fully described/identified, logical, consistent, and orderly
+NOTE: See clause 2.1 for further information.
+}
+
+class complex as "complex system" << term >>{
+{field} Definition: system in which there are non-trivial relationships between cause and effect
+}
+
+class configurationitemnetwork as "configuration item network" << term >>{
+{field} Definition: a document defining the relationship between configuration items, such that the chain of impacted items can be identified in response to a proposed change
+}
+
+class conops as "concept of operations" << term >>{
+{field} Definition: verbal and/or graphic statement, in broad outline, of an organization’s assumptions or intent regarding an operation or series of operations
+NOTE: The concept of operations, is a joint term covering all operational matters, including maintenance, however they are documented.
+}
+
+class designauthority as "design authority" << term >>{
+{field} Definition: person or body responsible for delivering the authorisation for technical decisions, change, and the operation of the system
+}
+
+class gate as "gate" << term >>{
+{field} Definition: hold-point at the end of a stage that is released upon demonstrated successful completion of the stage
+}
+
+class campaign as "integration campaign" << term >>{
+{field} Definition: planned execution of the relevant parts of the life cycle, including activities, products and stage gates focussed on a specific integration scope.
+NOTE: The scope could be for the full system, a subset of the system scope, or an interim configuration
+}
+
+class integrationgoals as "integration goals" << term >>{
+{field} Definition: objectives that define the desired outcomes of a specific integration campaign
+}
+
+class interface as "interface " << term >>{
+{field} Definition: point of interaction between (sub)systems
+}
+
+class lifecycle as "life cycle" << term >>{
+{field} Definition: series of identifiable stages through which a system goes, from its conception to disposal.
+NOTES:
+For example, a typical system lifecycle could include:
+concept and definition; design and development;
+construction, installation, and commissioning;
+operation and maintenance;
+mid-life upgrading, or life extension; and
+decommissioning and disposal.
+The stages identified will vary with the application. [BS EN 50126-1]
+}
+
+class OT as "operational technology" << term >>{
+{field} Definition: railway infrastructure used to solely to assist in the operationalisation of rail related assets, distinct from information technology (IT) in that it may contribute towards the safe operation of a railway and is treated as an engineered asset
+}
+
+class OBS as "organizational breakdown structure (OBS)" << term >>{
+{field} Definition: hierarchical representation of the project organization, which illustrates the relationship between project activities and the organizational units that will perform those activities
+}
+
+class N2 as "N2 diagram" << term >>{
+{field} Definition: diagram in the shape of a matrix, representing functional or physical interfaces between system elements
+}
+
+class schedule as "schedule" << term >>{
+{field} Definition: representation of the plan for executing the project’s activities, including durations, dependencies, and other planning information, used to produce a project schedule along with other scheduling artefacts
+}
+
+class element as "system element" << term >>{
+{field} Definition: member of a set of elements that constitute a system. A system element is a discrete part of a system that can be implemented to fulfil specified requirements. A system element may also be a System in its own right. [derived from ISO/IEC/IEEE 15288]
+}
+
+class systemsintegrator as "systems integrator" << term >>{
+{field} Definition: party responsible for integrating the subsystems/elements that make up the system of interest.
+}
+
+class SoI as "system of interest (SoI)" << term >>{
+{field} Definition: system whose life cycle is under consideration in the context of this Standard.
+}
+
+class SoS as "system of systems" << term >>{
+{field} Definition: set of systems or system elements that interact to provide a unique capability that none of the constituent systems can accomplish on its own.
+Note: Systems elements can be necessary to facilitate the interaction of the constituent systems in the system of systems” (ISO/IEC/IEEE 21839)
+}
+
+class systemsofwork as "systems of work " << term >>{
+{field} Definition: set of policies, processes and procedures used by an organization to ensure that it can fulfil the tasks required to achieve its objectives
+}
+
+class variant as "variant" << term >>{
+{field} Definition: defined deviation from a primary configuration baseline, which shall similarly be placed under configuration control
+}
+
+class WBS as "work breakdown structure (WBS)" << term >>{
+{field} Definition: hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables
+}
 
 @enduml
