@@ -1,6 +1,6 @@
 @startuml
 'title Standard modelling metamodel
-!startsub style
+!startsub STYLE
 'scale 1000 width
 'skinparam packageStyle frame
 'skinparam linetype polyline
