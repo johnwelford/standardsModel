@@ -3,11 +3,16 @@ Modelling of international standards
 
 This is an attempt to model standards using a UML-like language - I will be starting with [PlantUML](https://plantuml.com/).
 
+## Disclaimer
+This is a hobby project, it is not a substitute for reading standards yourself and should not be relied upon to present an accurate version of any standards.
+
+It is also not intended to infringe upon any copyrights, it merely presents an interpretation of the details contained within a select number of standards. These are presented in an attempt to elicit discussion and enhance shared understanding.
+
 ## Metamodel
 
 ![Metamodel image](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/johnwelford/standardsModel/main/metamodel.puml)
 
-This is realised in the file [metamodel.puml](https://github.com/johnwelford/standardsModel/blob/main/metamodel.puml) - ALSO USE THIS TO STORE AND APPLY STEREOTYPES?
+This is realised in the file [metamodel.puml](metamodel.puml) - ALSO USE THIS TO STORE AND APPLY STEREOTYPES?
 
 Each standard is modelled using three types of file:
 * *A single markdown document showing the model*, including all the model diagrams along with descriptive text to introduce them. This should be the only file needed to read the standard.
@@ -15,7 +20,7 @@ Each standard is modelled using three types of file:
 * *One or more PlantUML file detailing the relationships* between entities. Making reference to the entities defined above.
 
 ## Standards
-* [AS 7473:2020 Complex system integration in railways]()
+* [AS 7473:2020 Complex system integration in railways](7473.md)
 
 ## To-do
 - [x] Setup project
