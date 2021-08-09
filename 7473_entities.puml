@@ -1,7 +1,7 @@
 @startuml
 'title AS7473 entities definition
 '!includesub https://github.com/johnwelford/standardsModel/raw/main/metamodel.puml!style
-
+skinparam wrapWidth 200
 class 50126 as "BS EN 50126" << reference >>{
 {field} Description : The Specification and Demonstration of Reliability, Availability, Maintainability and Safety (RAMS)
 }
