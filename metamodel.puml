@@ -8,23 +8,28 @@ hide empty members
 'hide circle
 'hide stereotype 
 
-class term as "Term" << (T,#FF7700) >> {
+' spare colours from the palette... #FE88B1,#C9DB74,#8BE0A4,#B497E7,#D3B484,#B3B3B3
+
+class term as "Term" << (T,#66C5CC) >> {
 {field} Definition
 }
-class concept as "Concept"<< (C,#FF7700) >> {
+class concept as "Concept"<< (C,#F6CF71) >> {
 {field} Definition
 }
-class reference as "Reference" << (R,#FF7700) >> {
+class reference as "Reference" << (R,#F89C74) >> {
 {field} Description
 }
-class deliverable as "Deliverable" << (D,#FF7700) >> {
+class deliverable as "Deliverable" << (D,#DCB0F2) >> {
 {field} Description
+Necessity : Mandatory/Recommended/Optional
 }
-class activity as "Activity" << (A,#FF7700) >> {
+class activity as "Activity" << (A,#87C55F) >> {
 {field} Description
+Necessity : Mandatory/Recommended/Optional
 }
-class party as "Party" << (A,#FF7700) >> {
+class party as "Party" << (P,#9EB9F3) >> {
 {field} Description
+Necessity : Mandatory/Recommended/Optional
 }
 
 term - concept : used in >
