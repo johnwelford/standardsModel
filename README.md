@@ -32,3 +32,4 @@ Each standard is modelled using three types of file:
 - [ ] Build term links into entity file (use preprocessing script to generate image as an optional include subpart?)
 - [ ] Add necessity on relationships?
 - [ ] Use preprocessing to enforce conformance to metamodel?
+- [ ] Make comparisons between standards (as separate files? treat standards as namespaces?)
