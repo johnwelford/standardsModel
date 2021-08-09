@@ -29,9 +29,9 @@ class party as "Party" << (A,#FF7700) >> {
 
 term - concept : used in >
 activity -- activity : used in >
-
-activity -- deliverable: produces >
-party -- activity: carries out >
-activity -- reference: detailed in >
-concept -- reference: detailed in >
+party -- party : part of >
+activity -- deliverable : produces >
+party -- activity : carries out >
+activity -- reference : detailed in >
+concept -- reference : detailed in >
 @enduml
